@@ -11,6 +11,9 @@ public class Main {
         String isOdd = scanner.nextLine();
         System.out.println(stringaPariDispari(isOdd));
 
+        System.out.println("Ora vediamo se un anno è bisestile o meno. Prova ad inserire un anno");
+        int anno = scanner.nextInt();
+        System.out.println(annoBisestile(anno));
 
     }
 
@@ -19,12 +22,21 @@ public class Main {
 
         int strLength = str.length() % 2;
 
-        if (strLength == 0) {
+        return strLength == 0;
+
+//        if (strLength == 0) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+    }
+
+    static boolean annoBisestile(int anno) {
+        if (anno % 4 == 0 || anno % 400 == 0) {
             return true;
         } else {
             return false;
         }
     }
-
 
 }
