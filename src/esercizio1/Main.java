@@ -6,7 +6,7 @@ public class Main {
     static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        //eseercizio if - else if
+        //esercizio if - else if
         System.out.println("Inserisci una stringa di testo per vedere se è pari o dispari");
         String isOdd = scanner.nextLine();
         System.out.println(stringaPariDispari(isOdd));
@@ -25,8 +25,6 @@ public class Main {
             return false;
         }
     }
-
-    static boolean annoBisestile()
 
 
 }
