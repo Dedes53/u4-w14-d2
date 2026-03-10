@@ -22,7 +22,7 @@ public class Main {
 
         int strLength = str.length() % 2;
 
-        return strLength == 0;
+        return strLength == 0; //essendo un booleano mi da true qualora sia uguale a 0, e false in caso contrario
 
         //CHIEDERE COME MAI
 
@@ -34,11 +34,15 @@ public class Main {
     }
 
     static boolean annoBisestile(int anno) {
-        if (anno % 4 == 0 || anno % 400 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+
+        return (anno % 400 == 0) || (anno % 4 == 0 && anno % 100 != 0);
+
+//        if ((anno % 4 == 0 && anno % 100 != 0) || anno % 400 == 0) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+        
     }
 
 }
