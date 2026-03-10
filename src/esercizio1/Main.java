@@ -24,6 +24,8 @@ public class Main {
 
         return strLength == 0;
 
+        //CHIEDERE COME MAI
+
 //        if (strLength == 0) {
 //            return true;
 //        } else {
